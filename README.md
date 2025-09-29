@@ -22,7 +22,7 @@ Since most of the course was in Dutch, this will be the language from here on.
 - [Software](B_software.md)
 - [Examenopdracht](C_examenopdracht.md)
 
-1. React basics
+1. [React basics](001_react_basics.md)
 2. React state management
 3. React Router
 4. Data ophalen uit een REST API
