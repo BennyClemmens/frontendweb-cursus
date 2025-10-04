@@ -10,7 +10,6 @@ export function TodoItem({ id, done, text, description, onChangeChecked }) {
           className="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded"
           type="checkbox"
           checked={done}
-          readOnly
           onChange={handleChange}
         />
         <label className="flex-1">
