@@ -1154,13 +1154,22 @@ pnpm dev
 
 ## Oefening 4 - README
 
-Pas `README.md` aan zodat de gebruiker weet hoe de dependencies geïnstalleerd moeten worden, en hoe de applicatie gestart moet worden (in development).
+Pas `README.md` in de root van je repository aan zodat de gebruiker weet hoe de dependencies geïnstalleerd moeten worden, en hoe de applicatie gestart moet worden (in development).
 
-## Oefening 5 - Challenges
+Verwijder de README.md in je frontend map - de README.md in de root is voldoende.
+
+## Oefening 5 - Eigen project
+
+- maak een mockup van een eenvoudige pagina in je project
+- ontwerp de componentenboom. Beslis wat als state moet bewaard worden, en wat als props moet worden doorgegeven. Welke eventhandlers zijn er nodig? Waar implementeer je die? En hoe worden die doorgegeven?
+- voeg mock data toe
+- implementeer de componenten
+
+## Oefening 6 - Challenges
 
 Probeer de challenges op <https://react.dev/learn/keeping-components-pure>.
 
-## Oefening 6 - To do app
+## Oefening 7 - To do app
 
 Zorg ervoor dat de checkbox in de To do app (zie oefening 2 van vorige les) aan en uit gevinkt kan worden.
 
@@ -1168,7 +1177,7 @@ Zorg ervoor dat de checkbox in de To do app (zie oefening 2 van vorige les) aan 
 
 Een voorbeeldoplossing (maar er zijn er uiteraard heel veel mogelijk) is te vinden op https://github.com/<HOGENT-frontendweb/frontendweb-ch1-solution>. Ga naar de branch `oplossingLes2`
 
-## Oefening 7 - SnakeEyes
+## Oefening 8 - SnakeEyes
 
 SnakeEyes is het resultaat van het gooien van twee dobbelstenen. Als op beide dobbelstenen één oog staat heb je "snake eyes". Bij de aanvang van het spel worden twee dobbelstenen getoond met de waarde 6. Het aantal dobbelstenen is standaard 2, maar kan ook meer zijn. Telkens wanneer de gebruiker op een dobbelsteen klikt, wordt een willekeurig getal gegenereerd.
 
@@ -1214,4 +1223,4 @@ Een voorbeeldoplossing (maar er zijn er uiteraard heel veel mogelijk) is te vind
 - [The new wave of React state management](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/)
 - [Why You Should Use Redux in 2024](https://gitnation.com/contents/why-you-should-use-redux-in-2024)
 
-Laatste aanpassing op 28/09/2025 19:56
+Laatste aanpassing op 05/10/2025 20:12
