@@ -23,9 +23,9 @@ Since most of the course was in Dutch, this will be the language from here on.
 - [Examenopdracht](C_examenopdracht.md)
 
 1. [React basics](001_react_basics.md)
-2. React state management
-3. React Router
-4. Data ophalen uit een REST API
+2. [React state management](002_react_state_management.md)
+3. [React Router](003_react_router.md)
+4. [Data ophalen uit een REST API](004_data_ophalen_uit_een_rest_api.md)
 5. Formulieren & hooks
 6. Context API
 7. Testing
