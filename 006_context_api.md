@@ -758,9 +758,11 @@ Pas nu alle knoppen in de applicatie aan zodat ze de `primary` of `secondary` cl
 >
 > Vergeet geen `.env` aan te maken! Bekijk de [README](https://github.com/HOGENT-frontendweb/frontendweb-budget?tab=readme-ov-file#budgetapp) voor meer informatie.
 
+`NB: bugfix in commit 5d642b4`
+
 ### Oefening 4 - Je eigen project
 
 Controleer je eigen project op anti-patterns, duplicate code en refactor.
 Denk na over global state in je project. Indien van toepassing, maak hiervoor een Context aan.
 
-Laatste aanpassing op 26/10/2025 16:17
+Laatste aanpassing op 27/10/2025 18:41
