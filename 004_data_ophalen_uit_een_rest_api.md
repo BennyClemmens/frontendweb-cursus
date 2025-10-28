@@ -1,36 +1,36 @@
 # [^](README.md) Data ophalen uit een REST API
 
 > Startpunt voorbeeldapplicatie
-
-```bash
-git clone https://github.com/HOGENT-frontendweb/frontendweb-budget.git
-cd frontendweb-budget
-git checkout -b les4 5a31e56
-pnpm install
-pnpm dev
-```
-
+>
+> ```bash
+> git clone https://github.com/HOGENT-frontendweb/frontendweb-budget.git
+> cd frontendweb-budget
+> git checkout -b les4 5a31e56
+> pnpm install
+> pnpm dev
+> ```
+>
 > Vanaf dit hoofdstuk heb je de bijbehorende backend nodig. Maak een database `budget` aan. Zie instructies in de [cursus Webservices](https://hogent-frontendweb.github.io/webservices-cursus/#/4-datalaag/deel1?id=mysql-databank) :
-
-```bash
-git clone https://github.com/HOGENT-frontendweb/webservices-budget.git
-cd webservices-budget
-git checkout -b les5 d486627
-pnpm install
-pnpm db:migrate
-pnpm db:seed
-pnpm start:dev
-```
-
+>
+> ```bash
+> git clone https://github.com/HOGENT-frontendweb/webservices-budget.git
+> cd webservices-budget
+> git checkout -b les5 d486627
+> pnpm install
+> pnpm db:migrate
+> pnpm db:seed
+> pnpm start:dev
+> ```
+>
 > Vergeet geen `.env` aan te maken! Bekijk de [README](https://github.com/HOGENT-frontendweb/webservices-budget?tab=readme-ov-file#webservices-budget) voor meer informatie.
 
-In dit hoofdstuk vervangen we de mock data door HTTP requests naar de REST API. Op ons lokaal toestel draait deze API op <http://localhost:9000/api/>.
+In dit hoofdstuk vervangen we de mock data door HTTP requests naar de REST API. Op ons lokaal toestel draait deze API op <http://localhost:3000/api/>.
 
 Voor de communicatie met de API, m.a.w. het versturen van HTTP requests, kan je gebruik maken van de [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) of van HTTP client libraries die je kan vinden op bv. <https://www.npmjs.com>.
 
-Wij zullen gebruik maken van swr, een React Hooks library for data fetching. Het wordt ontwikkeld door Vercel, het bedrijf achter Next.js. In de documentatie lezen we de betekenis van de naam van het package:
+Wij zullen gebruik maken van [swr](https://www.npmjs.com/package/swr), een *React Hooks library for data fetching*. Het wordt ontwikkeld door Vercel, het bedrijf achter Next.js. In de documentatie lezen we de betekenis van de naam van het package:
 
-> The name “SWR” is derived from stale-while-revalidate, a cache invalidation strategy popularized by [HTTP RFC 5861](https://datatracker.ietf.org/doc/html/rfc5861). SWR first returns the data from cache (stale), then sends the request (revalidate), and finally comes with the up-to-date data again.
+> The name “SWR” is derived from `stale-while-revalidate`, a cache invalidation strategy popularized by [HTTP RFC 5861](https://datatracker.ietf.org/doc/html/rfc5861). SWR first returns the data from cache (stale), then sends the request (revalidate), and finally comes with the up-to-date data again.
 
 Naast SWR hebben we ook [axios](https://www.npmjs.com/package/axios) nodig, een HTTP client library die we gebruiken om de HTTP requests uit te voeren. SWR heeft namelijk geen ingebouwde HTTP client, je bent dus vrij om te kiezen welke HTTP client je gebruikt. In tegenstelling tot `swr` kan je `axios` ook gebruiken in een Node.js omgeving, om bv. data op te halen uit een third party API.
 
