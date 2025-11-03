@@ -28,7 +28,7 @@ Since most of the course was in Dutch, this will be the language from here on.
 4. [Data ophalen uit een REST API](004_data_ophalen_uit_een_rest_api.md)
 5. [Formulieren & hooks](005_formulieren_en_hooks.md)
 6. [Context API](006_context_api.md)
-7. Testing
+7. [Testing](007_testing.md)
 8. Authenticatie & autorisatie
 9. E2E testen met authenticatie
 10. CI/CD
